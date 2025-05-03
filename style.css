@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: blue;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgb(135, 235, 150);
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid brown;
+}
+
+.cell.taken {
+  cursor: not-allowed;
+  color:red;
+}
+
+.controls {
+  margin: 1rem 0;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}

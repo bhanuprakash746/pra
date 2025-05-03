@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="controls">
+    <button onclick="startGame('pvp')">2 Players</button>
+    <button onclick="startGame('ai')">Player vs AI</button>
+    <button onclick="resetGame()">Reset</button>
+  </div>
+  <div id="status"></div>
+  <div class="game" id="gameBoard"></div>
+
+  <script src="tic.js"></script>
+</body>
+</html>
